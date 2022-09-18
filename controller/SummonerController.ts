@@ -9,4 +9,6 @@ export default class SummonerController {
                 .catch((err) => reject(err));
         });
     }
+
+    public static;
 }

@@ -7,3 +7,15 @@ export interface Summoner {
     revisionDate: number;
     summonerLevel: number;
 }
+
+export interface MatchOverviewDetails {
+    gameType: string;
+    winner: boolean;
+    length: string;
+    champion: string;
+    summonerSpells: [string, string];
+    kda: [number, number, number];
+    level: number;
+    creeps: number;
+    items: [string, string, string, string, string, string, string];
+}

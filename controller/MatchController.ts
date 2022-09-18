@@ -9,7 +9,7 @@ export default class MatchController {
         });
     }
 
-    public static async getMatchFullDetails(matchId: string): Promise<Object> {
+    public static async getMatchFullDetails(matchId: string): Promise<any> {
         return new Promise((resolve, reject) => {
             leagueJs.Match.gettingById(matchId)
                 .then((res) => resolve(res))
