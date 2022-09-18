@@ -11,7 +11,11 @@ const router = require('./router');
 logger.info('Starting server with config - ' + JSON.stringify(config));
 
 const app = express();
-app.use(cors());
+app.use(
+    cors({
+        origin: '*',
+    }),
+);
 app.use(express.json());
 
 // TODO: Setup error handler middleware!!!
