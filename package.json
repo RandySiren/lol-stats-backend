@@ -1,9 +1,11 @@
 {
-  "name": "api-bootstrap",
+  "name": "lol-stats-backend",
   "version": "1.0.0",
   "description": "",
   "main": "build/server.js",
   "scripts": {
+    "build": "tsc",
+    "postinstall": "npm run build",
     "start": "node build/server.js",
     "dev": "nodemon server.ts"
   },
