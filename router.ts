@@ -56,6 +56,7 @@ router.get('/getRecentMatchDetails', async (req, res, next) => {
             ];
 
             const matchDetail: MatchOverviewDetails = {
+                matchId,
                 gameType: matchFullDetails.info.gameMode,
                 winner: summonerGameDetails.win,
                 length: matchFullDetails.gameDuration,

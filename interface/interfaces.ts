@@ -9,6 +9,7 @@ export interface Summoner {
 }
 
 export interface MatchOverviewDetails {
+    matchId: string;
     gameType: string;
     winner: boolean;
     length: string;
